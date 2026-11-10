@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta | Ctrl + Alt + $</title><link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <aside class="brand-panel" aria-label="Ctrl + Alt + $">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">$</span><span>Ctrl + Alt + $</span></div>
+      <section class="brand-copy"><p class="eyebrow">SEU CONTROLE FINANCEIRO</p><h1>Organize seu dinheiro.<br>Conquiste seus objetivos.</h1><p>Acompanhe suas receitas, despesas e metas em um só lugar.</p></section>
+      <div class="mini-categories" aria-hidden="true"><span>Receitas</span><span>Despesas</span></div>
+    </aside>
+    <section class="form-panel">
+      <form class="form-card" id="register-form" novalidate>
+        <h2>Crie sua conta</h2><p class="subtitle green">Comece a organizar sua vida financeira.</p>
+        <div class="notice" id="register-notice" role="status" aria-live="polite"></div>
+        <div class="field"><label for="nome">Nome completo</label><input id="nome" name="nome" autocomplete="name" placeholder="Digite seu nome completo" minlength="2" required></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="seu-email@email.com" required></div>
+        <div class="field"><label for="senha">Senha</label><input id="senha" name="senha" type="password" autocomplete="new-password" placeholder="Crie uma senha (mínimo 8 caracteres)" minlength="8" required></div>
+        <div class="field"><label for="confirmar-senha">Confirme sua senha</label><input id="confirmar-senha" name="confirmarSenha" type="password" autocomplete="new-password" placeholder="Digite sua senha novamente" required></div>
+        <label class="terms"><input type="checkbox" name="termos" required><span>Li e aceito os termos de uso e a política de privacidade.</span></label>
+        <div class="form-spacer"></div>
+        <button class="primary-button" type="submit">Criar Conta</button>
+        <p class="form-footer">Já tem uma conta? <a href="/login.html">Fazer login</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="/auth.js" defer></script>
+</body>
+</html>

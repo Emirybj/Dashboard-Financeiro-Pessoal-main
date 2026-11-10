@@ -1,0 +1,49 @@
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<aside class="drawer" id="depositarMetaDrawer">
+  <div class="drawer-body">
+    <div class="drawer-header">
+      <h2>Depositar em uma meta</h2>
+      <p>Adicione dinheiro ao seu objetivo financeiro.</p>
+    </div>
+
+    <form id="depositarMetaForm" novalidate>
+      
+      <div class="selected-goal-card">
+        <div class="goal-card-label">Meta Selecionada</div>
+        <div class="goal-card-title" id="displayMetaNome">Comprar Celular</div>
+        <div class="goal-card-values" id="displayMetaValores">R$ 1.800,00 guardados de R$ 4.000,00</div>
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="valorDeposito">Valor do Depósito</label>
+          <span class="error-msg" id="error-valorDeposito">* Campo obrigatório</span>
+        </div>
+        <input type="text" id="valorDeposito" class="form-control" placeholder="R$ 0,00">
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="dataDeposito">Data do depósito</label>
+          <span class="error-msg" id="error-dataDeposito">* Campo obrigatório</span>
+        </div>
+        <input type="date" id="dataDeposito" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="observacoesDeposito">Observações (opcional)</label>
+          <span class="error-msg" id="error-observacoesDeposito" style="display:none;"></span>
+        </div>
+        <input type="text" id="observacoesDeposito" class="form-control" placeholder="Ex: Dinheiro economizado no mês">
+      </div>
+
+    </form>
+  </div>
+
+  <div class="drawer-footer">
+    <button type="button" class="btn-cancel" id="btnCancel">Cancelar</button>
+    <button type="button" class="btn-submit" id="btnSave">Confirmar Depósito</button>
+  </div>
+</aside>

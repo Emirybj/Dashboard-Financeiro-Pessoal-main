@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar | Ctrl + Alt + $</title><link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <aside class="brand-panel" aria-label="Ctrl + Alt + $">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">$</span><span>Ctrl + Alt + $</span></div>
+      <section class="brand-copy"><p class="eyebrow">SEU CONTROLE FINANCEIRO</p><h1>Organize seu dinheiro.<br>Conquiste seus objetivos.</h1><p>Acompanhe suas receitas, despesas e metas em um só lugar.</p></section>
+      <div class="mini-categories" aria-hidden="true"><span>Receitas</span><span>Despesas</span></div>
+    </aside>
+    <section class="form-panel">
+      <form class="form-card" id="login-form" novalidate>
+        <h2>Bem-vindo de volta!</h2><p class="subtitle green">Entre na sua conta para continuar.</p>
+        <div class="notice" id="login-notice" role="status" aria-live="polite"></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="Seu e-mail" required></div>
+        <div class="field"><label for="senha">Senha</label><input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Senha" required></div>
+        <a class="forgot-link" href="/recuperar-senha.html">Esqueci minha senha</a>
+        <button class="primary-button" type="submit">Entrar →</button>
+        <p class="form-footer">Não tem uma conta? <a href="/cadastro.html">Cadastre-se</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="/auth.js" defer></script>
+</body>
+</html>

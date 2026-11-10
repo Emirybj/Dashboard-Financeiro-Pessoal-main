@@ -1,0 +1,53 @@
+<!-- Overlay para escurecer o fundo -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<aside class="drawer" id="metaDrawer">
+  <div class="drawer-body">
+    <div class="drawer-header">
+      <h2>Nova Meta</h2>
+      <p>Defina seu próximo objetivo financeiro.</p>
+    </div>
+
+    <form id="metaForm" novalidate>
+      
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="nomeMeta">Nome da Meta</label>
+          <span class="error-msg" id="error-nomeMeta">* Campo obrigatório</span>
+        </div>
+        <input type="text" id="nomeMeta" class="form-control" placeholder="Ex: Comprar um celular.">
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="valorDesejado">Valor Desejado</label>
+          <span class="error-msg" id="error-valorDesejado">* Campo obrigatório</span>
+        </div>
+        <input type="text" id="valorDesejado" class="form-control" placeholder="Ex: R$ 4.000,00">
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="valorGuardado">Quanto você já guardou?</label>
+          <span class="error-msg" id="error-valorGuardado">* Campo obrigatório</span>
+        </div>
+        <input type="text" id="valorGuardado" class="form-control" placeholder="Ex: R$ 500,00">
+      </div>
+
+      <div class="form-group">
+        <div class="label-wrapper">
+          <label for="prazoMeta">Prazo para cumprir a meta</label>
+          <span class="error-msg" id="error-prazoMeta">* Campo obrigatório</span>
+        </div>
+        <input type="date" id="prazoMeta" class="form-control">
+      </div>
+
+    </form>
+  </div>
+
+  <div class="drawer-footer">
+    <button type="button" class="btn-cancel" id="btnCancel">Cancelar</button>
+    <button type="button" class="btn-submit" id="btnSave">Salvar Meta</button>
+  </div>
+</aside>

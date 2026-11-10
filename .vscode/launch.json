@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dashboard Financeiro (backend + frontend)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/net10.0/Dashboard-Financeiro-Pessoal.dll",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_URLS": "http://127.0.0.1:5150"
+      }
+    }
+  ]
+}

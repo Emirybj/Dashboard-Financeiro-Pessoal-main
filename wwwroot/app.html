@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel financeiro | Ctrl + Alt + $</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/app.css?v=20261029-5">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
+  <script src="/app.js?v=20261029-6" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="logo" href="#visao-geral"><span class="logo-mark"><i class="bi bi-currency-dollar"></i></span> Ctrl + Alt + $</a>
+      <nav aria-label="Menu principal">
+        <a href="#visao-geral" data-page="visao-geral"><i class="bi bi-grid"></i> Visão Geral</a>
+        <a href="#transacoes" data-page="transacoes"><i class="bi bi-arrow-left-right"></i> Transações</a>
+        <a href="#orcamento" data-page="orcamento"><i class="bi bi-pie-chart"></i> Orçamento</a>
+        <a href="#metas" data-page="metas"><i class="bi bi-bullseye"></i> Metas</a>
+        <span class="nav-label">ORGANIZAÇÃO</span>
+        <a href="#categorias" data-page="categorias"><i class="bi bi-tags"></i> Categorias</a>
+        <a href="#contas" data-page="contas"><i class="bi bi-wallet2"></i> Contas</a>
+        <a href="#relatorios" data-page="relatorios"><i class="bi bi-bar-chart"></i> Relatórios</a>
+      </nav>
+      <a class="profile-link" href="#perfil"><span class="avatar" id="avatar-initial">?</span><span><strong id="sidebar-name">Meu perfil</strong><small>Plano Individual</small></span><i class="bi bi-three-dots"></i></a>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu"><i class="bi bi-list"></i></button><div><h1 id="page-title"></h1><p id="page-subtitle"></p></div><div class="top-actions" id="top-actions"></div></header>
+      <main id="content" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Formulário" aria-hidden="true"><div id="drawer-content"></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

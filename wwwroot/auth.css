@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+:root {
+  color-scheme: light;
+  font-family: Inter, Arial, sans-serif;
+  color: #111827;
+  background: #f5f6f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --green: #2e805f;
+  --green-dark: #06432f;
+  --green-bright: #00d789;
+  --muted: #748079;
+  --border: #d6dce1;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input { font: inherit; }
+
+.auth-shell {
+  min-height: 100vh;
+  padding: 18px 10px 10px;
+  display: grid;
+  grid-template-columns: 56.4% 43.6%;
+  gap: 0;
+}
+.brand-panel {
+  min-height: calc(100vh - 28px);
+  padding: 40px 26px 26px;
+  background: var(--green-dark);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; }
+.brand-mark { color: var(--green-bright); border: 2px solid currentColor; width: 33px; height: 33px; border-radius: 8px; display: inline-grid; place-items: center; font-size: 23px; line-height: 1; }
+.brand-copy { max-width: 490px; margin-top: auto; margin-bottom: auto; padding: 50px 8px; }
+.eyebrow { color: #00a968; font-size: 20px; font-weight: 600; margin: 0 0 16px; }
+.brand-copy h1 { font-size: 21px; line-height: 1.28; margin: 0 0 18px; font-weight: 600; }
+.brand-copy p:last-child { max-width: 430px; color: #e0ebe5; font-size: 14px; line-height: 1.4; margin: 0; }
+.mini-categories { display: flex; gap: 12px; }
+.mini-categories span { width: 135px; height: 48px; display: flex; align-items: center; padding-left: 12px; border: 1px solid #b7c8c0; border-radius: 6px; font-size: 13px; font-weight: 500; }
+.form-panel { min-height: calc(100vh - 28px); background: white; padding: 36px clamp(28px, 5.4vw, 74px); display: flex; align-items: center; justify-content: center; }
+.form-card { width: min(100%, 430px); }
+.form-card h2 { color: var(--green-dark); font-size: 21px; line-height: 1.3; margin: 0 0 9px; font-weight: 600; }
+.subtitle { margin: 0 0 42px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.subtitle.green { color: var(--green); margin-bottom: 45px; }
+.field { display: block; margin-bottom: 22px; }
+.field label { display: block; font-size: 14px; margin: 0 0 6px; }
+.field input { width: 100%; height: 40px; padding: 0 10px; border: 1px solid var(--border); border-radius: 5px; outline: none; font-size: 13px; color: #17211c; }
+.field input::placeholder { color: #9aa5b1; font-size: 11px; }
+.field input:focus { border-color: var(--green); box-shadow: 0 0 0 3px #2e805f20; }
+.forgot-link { display: block; text-align: right; margin: -1px 0 19px; font-size: 12px; }
+.primary-button { min-height: 42px; width: 100%; border: 0; border-radius: 6px; background: var(--green); color: white; font-weight: 600; cursor: pointer; transition: background .15s ease, transform .15s ease; }
+.primary-button:hover { background: #246f50; }
+.primary-button:active { transform: translateY(1px); }
+.form-footer { text-align: center; margin: 12px 0 0; font-size: 12px; }
+.form-footer a { font-weight: 500; }
+.terms { display: flex; align-items: flex-start; gap: 7px; margin-top: -9px; margin-bottom: 24px; font-size: 11px; line-height: 1.4; }
+.terms input { accent-color: var(--green); margin: 2px 0 0; }
+.form-spacer { height: 56px; }
+.notice { display: none; border-radius: 6px; padding: 11px 13px; margin: 0 0 18px; font-size: 13px; line-height: 1.45; }
+.notice.show { display: block; }
+.notice.error { color: #982e2e; background: #fff0f0; border: 1px solid #f2cccc; }
+.notice.success { color: #155a39; background: #eef8f1; border: 1px solid #cde9d4; }
+.confirmation { text-align: center; }
+.confirmation .subtitle { margin: 20px 0 30px; }
+.confirmation .primary-button { display: grid; place-items: center; }
+.confirmation .form-footer { color: var(--muted); font-size: 13px; margin-top: 20px; }
+
+/* Pricing screen */
+.plan-shell { min-height: 100vh; padding: 20px; }
+.plan-card { min-height: calc(100vh - 40px); background: #fff; padding: 74px 9.3vw 80px; }
+.plan-head { text-align: center; }
+.person-icon { color: #fff; background: #58bd91; width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 24px; display: grid; place-items: center; font-size: 58px; }
+.plan-head h1 { color: var(--green-dark); font-size: 30px; margin: 0 0 2px; }
+.plan-head .tagline { margin: 0; font-size: 16px; }
+.price { font-size: 14px; margin: 16px 0 0; }
+.plan-divider { border: 0; border-top: 1px solid #c7c7c7; margin: 38px 0 56px; }
+.features { list-style: none; margin: 0 auto; padding: 0; max-width: 760px; font-size: 16px; }
+.features li { display: flex; align-items: center; gap: 18px; margin: 8px 0; }
+.check { color: var(--green-dark); font-size: 18px; font-weight: 700; }
+.plan-action { width: min(100%, 350px); display: block; margin: 38px auto 0; }
+.plan-message { text-align: center; margin: 15px auto 0; color: var(--green-dark); font-size: 13px; }
+
+@media (min-width: 1400px) { .brand-panel, .form-panel { min-height: calc(100vh - 28px); } }
+@media (max-width: 760px) {
+  .auth-shell { padding: 0; grid-template-columns: 1fr; }
+  .brand-panel { min-height: 235px; border-radius: 0; padding: 24px; }
+  .brand { font-size: 20px; }
+  .brand-copy { padding: 30px 0 18px; }
+  .brand-copy .eyebrow { font-size: 15px; margin-bottom: 8px; }
+  .brand-copy h1 { font-size: 18px; margin-bottom: 8px; }
+  .brand-copy p:last-child { font-size: 12px; }
+  .mini-categories { display: none; }
+  .form-panel { min-height: calc(100vh - 235px); padding: 38px 24px; align-items: flex-start; }
+  .form-card { margin: auto; }
+  .subtitle, .subtitle.green { margin-bottom: 30px; }
+  .form-spacer { height: 20px; }
+  .plan-shell { padding: 8px; }
+  .plan-card { min-height: calc(100vh - 16px); padding: 48px 24px; }
+  .person-icon { width: 84px; height: 84px; font-size: 46px; margin-bottom: 20px; }
+  .plan-head h1 { font-size: 25px; }
+  .plan-head .tagline { font-size: 14px; }
+  .plan-divider { margin: 30px 0; }
+  .features { font-size: 14px; }
+  .features li { gap: 12px; margin: 12px 0; }
+}
